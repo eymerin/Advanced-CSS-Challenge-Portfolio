@@ -81,9 +81,7 @@ p {
 }
 
 .about-me img {
-    height:300px;
-    width: 300 px;
-    object-fit: cover;
+    height:350px
 }
 
 .about-me p {
