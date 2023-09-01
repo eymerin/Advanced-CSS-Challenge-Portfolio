@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+body {
+    font-family: 'Verdana', 'Century Gothic', 'Arial', sans-serif;
+    color:white;
+    font-size: 16pt;
+    background-color: #85b7b6;
+}
+
+header {
+    padding: 20px;
+    font-family: 'DejaVu Sans', 'Verdana', 'Century Gothic', 'Arial', sans-serif;
+    background-color: #017481;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    min-width: fit-content;
+    flex-wrap: nowrap;
+    margin-bottom: 0px;
+}
+
+/*Defines alignment and font size for h1 element*/
+header h1 {
+    display: inline-flex;
+    font-size: 48px;
+}
+
+header nav {
+    padding-top: 15px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 22pt;
+    justify-content: space-evenly;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+header nav ul li {
+    display: inline-flex;
+    color: white;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 25px;
+}
+
+.about-me {
+    height: fit-content;
+    margin: 0;
+    margin-top: 10px;
+    padding-top: 0px;
+    width: 100%;
+    background-color: #41959e;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me h2 {
+    font-size: 30px;
+    height: fit-content;
+    width:fit-content;
+    flex: 0;
+}
+
+.about-me img {
+    height:300px;
+    width: 300 px;
+    object-fit: cover;
+}
+
+.about-me p {
+    flex: 8;
+    padding: 30px;
+}
+
+.photo-header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.break {
+    display: flex;
+    width: 100%;
+    margin: 0px;
+}
+
+.break-tall {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.project {
+    height:auto;
+    margin: 0;
+    margin-top: 10px;
+    padding-top: 0px;
+    width: 100%;
+    background-color: #41959e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project h2 {
+    font-size: 30px;
+    height: fit-content;
+    width: 100%;
+    flex: 0;
+    text-align: left;
+}
+
+.project img {
+    height:225px;
+    width:300px
+}
+
+.project-tile {
+    position: relative;
+    height:225px;
+    width:300px;
+    margin: 10px;
+}
+
+.project-tile figcaption {
+    position: absolute;
+    bottom: 75%;
+    left: 35px;
+    width: fit-content;
+    text-align: center;
+    background:#2b2b2b;
+}
+
+.contact {
+    height: fit-content;
+    margin: 0;
+    margin-top: 10px;
+    padding-top: 0px;
+    width: 100%;
+    background-color: #41959e;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.contact {
+    justify-self: baseline;
+}
+
+.contact-links {
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 830px) {
+    /* Use flex-direction to stack the navbar, and body */
+    main, header, header h1, nav ul {
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+
+    /* Change the header background */
+    header {
+      background: #017481;
+      align-self: center;
+      justify-self: center;
+      min-width: 455px;
+    }  
+
+    header h1 {
+        align-self: center;
+        justify-self: center;
+        float: center;
+    }
+
+    header nav ul {
+        list-style-type: none;
+        display: inline-flex;
+        min-width: 455px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        min-width: 455px;
+        margin: 0px;
+    }
+
+    .about-me img {
+        align-self: center;
+    }
+
+    .about-me h2 {
+        align-self: center;
+    }
+
+    .project {
+        flex-direction: column;
+        margin-top: 45px;
+        min-width: 455px;
+    }
+
+    .project img {
+        align-self: center;
+    }
+
+    .project h2 {
+        align-self: center;
+    }
+
+    .project-tile {
+        align-self: center;
+        justify-self: center;
+    }
+
+}
